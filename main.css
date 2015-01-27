@@ -1,0 +1,100 @@
+.cell {
+    position: absolute;
+    background: gray;
+    border: 2px solid red;
+    height: 50px;
+    width: 50px;
+}
+
+.cell > div:nth-child(1) {
+    position: absolute;
+    top : 0px;
+    left: 0px;
+    height: 30%;
+    width: 100%;
+    opacity: 0;
+}
+
+.cell > div:nth-child(3) {
+    position: absolute;
+    bottom : 0px;
+    left: 0px;
+    height: 30%;
+    width: 100%;
+    opacity: 0;
+}
+
+.cell > div:nth-child(2) {
+    position: absolute;
+    top : 0px;
+    right: 0px;
+    height: 100%;
+    width: 30%;
+    opacity: 0;
+}
+
+.cell > div:nth-child(4) {
+    position: absolute;
+    top : 0px;
+    left: 0px;
+    height: 100%;
+    width: 30%;
+    opacity: 0;
+}
+
+
+.cell > div:hover {
+    opacity: 1;
+    background: blue;
+}
+
+.parkContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    border: 2px solid blue;
+    background-color: lightblue; 
+}
+
+.parkContainer > div:nth-child(1) {
+    position: absolute;
+    top:10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #aaaaaa;
+    text-align: center;
+    font: bold 36px Tahoma;
+}
+.parkContainer > div:nth-child(1):hover {
+    border: 2px solid red;
+    color: red;
+    cursor: pointer;
+}
+
+.parkContainer > div:nth-child(2) {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+.cellContainer {
+    width: 540px;
+    height: 540px;
+    position: absolute;
+    top: 0;
+    left: 304px;
+    border: 2px solid blue;
+}
+
+button {
+    font-size: 20px;
+    background-color: #aaaaaa;
+}
+
+button:hover {
+    color:red;
+}
