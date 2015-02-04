@@ -1,19 +1,17 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>Cell Container</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    
-	<link rel="stylesheet" href="main.css" >
-	<script type="text/javascript">
-	$(document).ready(function(){
-		var p = new Parking(undefined,[100,200]);
-		p.renderPark();
-		});
-	</script>
-	<script src = "main.js" ></script>
-</head>
-<body>
-
-</body>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        
+        <script src = "main.js" ></script>
+        <link rel="stylesheet" href="main.css" >
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#parkSave").append("<p>"+JSON.stringify(ParkingDB)+"</p>");
+        });
+        </script>
+    </head>
+    <body>    
+        <a id="plus" href="index1.html"><div>+</div></a>
+        <div id="parkSave"> Datas from Parking.</div>
+    </body>    
 </html>
