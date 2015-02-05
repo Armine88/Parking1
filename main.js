@@ -1,4 +1,5 @@
 var cellContainerSize = 10;
+var cellSize = 80;
 var cellC = new CellContainer(cellContainerSize, "cellContainer1"); 
 var ParkingDB = [];
 function Parking (className, priceInterval) {
@@ -91,7 +92,6 @@ function Parking (className, priceInterval) {
 }
 
 function CellContainer(cellContSize, cellContClass){
-    var cellSize = 80;
     var cellContS;
     var cellContCl;
     if(cellContSize == undefined) {
